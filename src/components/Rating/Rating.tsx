@@ -6,6 +6,9 @@ type RatingPropsType = {
    */
   value: RatingValueType
   onClick: (value: RatingValueType) => void
+  /**
+   * color for star
+   */
   color?: string
 }
 
@@ -55,12 +58,11 @@ export type StarPropsType = {
 function Star(props: StarPropsType) {
   return (
     <span
-      style={{ color: props.color ? props.color : 'black' }}
       onClick={() => {
         props.onClick(props.value)
       }}
     >
-      {props.selected ? <b> star</b> : ' star'}
+      {props.selected ? <b style={{ color: props.color }}> star</b> : ' star'}
     </span>
   )
 }
