@@ -62,7 +62,7 @@ function Star(props: StarPropsType) {
         props.onClick(props.value)
       }}
     >
-      {props.selected ? <b style={{ color: props.color }}> star</b> : ' star'}
+      {props.selected ? <b style={{ color: 'red' }}> star</b> : ' star'}
     </span>
   )
 }
