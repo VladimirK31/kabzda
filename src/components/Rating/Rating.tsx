@@ -9,7 +9,7 @@ type RatingPropsType = {
   /**
    * color for star
    */
-  color?: string
+  // color?: string
 }
 
 export function Rating(props: RatingPropsType) {
@@ -19,31 +19,31 @@ export function Rating(props: RatingPropsType) {
         selected={props.value > 0}
         onClick={props.onClick}
         value={1}
-        color={props.color}
+        // color={props.color}
       />
       <Star
         selected={props.value > 1}
         onClick={props.onClick}
         value={2}
-        color={props.color}
+        // color={props.color}
       />
       <Star
         selected={props.value > 2}
         onClick={props.onClick}
         value={3}
-        color={props.color}
+        // color={props.color}
       />
       <Star
         selected={props.value > 3}
         onClick={props.onClick}
         value={4}
-        color={props.color}
+        // color={props.color}
       />
       <Star
         selected={props.value > 4}
         onClick={props.onClick}
         value={5}
-        color={props.color}
+        // color={props.color}
       />
     </div>
   )
